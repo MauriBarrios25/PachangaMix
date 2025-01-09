@@ -9,11 +9,207 @@
 
 }
 
-html {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-
+/* Estilos para la sección "coffee" */
+.coffee-section {
+    background-color: rgba(102, 51, 0, 0.2); /* Marrón sutil con transparencia */ 
+    padding: 40px 0;    
+    backdrop-filter: blur(5px); /* Efecto cristal */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);    
+    backdrop-filter: blur(4px);    
+    -webkit-backdrop-filter: blur(4px);    
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+.coffee-container.container { /* Targets the specific container within coffee-section */
+    background-color: #d2b48c; /* Coffee-themed color */
+    margin-top: 60px; /* Added top margin for spacing */
+    padding: 40px 0;
+    backdrop-filter: blur(5px); /* Efecto cristal */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);     
+    backdrop-filter: blur(4px);    
+    -webkit-backdrop-filter: blur(4px);    
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.coffee-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-gap: 30px;    
+    max-width: 1100px; /* Adjusted for better visual balance */
+    margin: 0 auto;
+    align-items: center; 
+}
+
+.coffee-image {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.coffee-image:hover {
+    transform: scale(1.05); /* Zoom sutil al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra aumentada al pasar el cursor */
+}
+
+.coffee-image img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.coffee-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco sutil para el contenido */     
+    padding: 30px; /* Added padding for better visual spacing */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    backdrop-filter: blur(5px); /* Efecto cristal */
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border */
+    text-align: left; 
+}
+
+.coffee-content h2 {
+    color: #343a40;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 15px; 
+}
+
+.coffee-content p {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.coffee-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px; 
+}
+
+.coffee-content li {
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección "productos" */
+.productos-general {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    padding: 40px;
+    background-color: #3a3a3a; /* Color de fondo gris oscuro */
+}
+
+/* Estilos para las tarjetas de café soluble y café en grano */
+.cafesolu, .cafegrano {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco sutil para el contenido */     
+    padding: 30px; /* Agregado relleno para un mejor espaciado visual */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    backdrop-filter: blur(8px); /* Efecto cristal */
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Borde sutil */
+    text-align: center;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para la tarjeta de café soluble */
+.cafesolu {
+    background-color: rgba(255, 240, 215, 0.8); /* Amarillo sutil con transparencia */    
+    backdrop-filter: blur(5px); /* Efecto cristal */
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Borde sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    /* Efecto de brillo más acentuado */
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(255, 240, 215, 0.5); /* Resplandor sutil */
+    -moz-box-shadow: 0px 0px 20px 5px rgba(255, 240, 215, 0.5);
+    box-shadow: 0px 0px 20px 5px rgba(255, 240, 215, 0.5);
+}
+
+/* Estilos para la tarjeta de café en grano */
+.cafegrano {
+    background-color: rgba(245, 245, 220, 0.8); /* Beige sutil con transparencia */
+    backdrop-filter: blur(5px); /* Efecto cristal */
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Borde sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    /* Efecto de brillo más acentuado */
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(245, 245, 220, 0.5); /* Resplandor con temática de café */
+    -moz-box-shadow: 0px 0px 20px 5px rgba(245, 245, 220, 0.5);
+    box-shadow: 0px 0px 20px 5px rgba(245, 245, 220, 0.5); 
+}
+
+.cafesolu:hover, .cafegrano:hover {
+    transform: translateY(-5px); /* Eleva ligeramente la tarjeta al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra aumentada al pasar el cursor */
+    /* Efecto de brillo al pasar el cursor */
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(80, 80, 80, 0.75); /* Resplandor para .cafesolu */
+    -moz-box-shadow: 0px 0px 30px 10px rgba(80, 80, 80, 0.75); 
+    box-shadow: 0px 0px 30px 10px rgba(80, 80, 80, 0.75);
+}
+
+.cafesolu h2, .cafegrano h2 {
+    color: #343a40;
+    font-size: 2em; /* Adjusted font size */
+    margin-bottom: 10px;
+}
+
+.cafesolu p, .cafegrano p {
+    color: #6c757d;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Mejora la legibilidad */ 
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* Media queries para responsiveness */
+@media (max-width: 768px) {
+    .productos-general {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta el tamaño de las tarjetas en pantallas pequeñas */     
+    }
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #343a40; /* Color de fondo oscuro */    
+    color: #f0f0f0; /* Color de texto claro para mejor contraste */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em; /* Increased font size */
+    font-weight: 500; /* Added font weight */
+    margin-bottom: 0; /* Eliminado margen para visualización en línea */
+    display: inline-block; /* Hace que el texto fluya en línea */
+    margin: 0 10px; /* Added spacing between text elements */
+}
+
+footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ced4da; /* Color de texto claro al pasar el mouse */
+}
+
+
+html {
+    font-family: 'IBM Plex Sans', sans-serif; /* Fuente cambiada para un aspecto minimalista */    
+    font-weight: 400; /* Adjusted font weight */
+    background-color: #333; /* Color de fondo gris oscuro */
+}
+
 
 .container {
     max-width: 1200px;
@@ -22,13 +218,12 @@ html {
 }
 
 .header {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)),
-        url("../PachangaMix/recursos/img/Cafe 3.jpeg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("./recursos/img/Cafe 3.jpeg");     
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
         min-height: 70vh;
         display: flex;
         align-items: center;
@@ -42,14 +237,14 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;  
-
+    padding: 20px 40px; /* Added padding for better visual spacing */
 }
 
 .logo{
     color: white;
-    font-size: 25px;
+    font-size: 28px; /* Increased font size for better visibility */
     font-weight: bold;
-}
+}    
 
 .logo:hover{
     color: rgb(255, 220, 25);
@@ -58,7 +253,7 @@ html {
 
 .menu .navbar ul li{
     position: relative;
-    float: left;
+    float: left; 
 }
 
 .menu .navbar ul li a{
@@ -82,7 +277,7 @@ html {
     display: none;
 }
 
-.menu-icono{
+.menu-icono {
     width: 25px;
 }
 
@@ -96,9 +291,9 @@ html {
 }
 
 .header-content h1{
-    font-size: 75px;
-    line-height: 80px;
-    color: white;
+    font-size: 6rem; /* Using rem for better scalability */
+    line-height: 80px;    
+    color: white; 
     text-transform: uppercase;
     margin-top: 100px;
     margin-bottom: 55px;
@@ -113,6 +308,11 @@ html {
     margin-top: 25px;
 }
 
+.image-container img:hover{
+    transform: scale(1.1);
+}
+
+
 .img-container {
     
     justify-content: center;
@@ -125,25 +325,28 @@ html {
 
 .btn-1 {
     text-transform: uppercase;
-    display: inline-block;
-    padding: 10px 20px;
-    color: white;
-    background-color: rgb(51, 190, 245);
-    outline-style: none;
-    border-radius: 15px;
-    transition: all, ease-in-out, 0.8s;
-
+    display: inline-block;    
+    padding: 15px 30px; /* Increased padding for a larger button */
+    color: #fff; /* Texto blanco para mejor contraste */     
+    background-color: #4b2c20; /* Fondo café oscuro para un aspecto mate */    
+    border: none; 
+    border-radius: 10px; /* Adjusted border radius */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    backdrop-filter: blur(5px); /* Efecto Glassmorphism */
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 0.3s ease; /* Transición suave para todas las propiedades */
+    cursor: pointer; /* Indica que se puede hacer clic */ 
 }
 
 .btn-1:hover {
     text-transform: uppercase;
-    display: inline-block;
-    padding: 10px 20px;
-    color: white;
-    background-color: rgb(24, 63, 235);
-    outline-style: none;
-    border-radius: 20px;
-
+    background-color: #d2b48c; /* Color café para hover */    
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Sombra aumentada al pasar el ratón */
+    transform: translateY(-3px); /* Leve elevación al pasar el ratón */
+    /* Efecto de brillo al pasar el ratón */
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(181, 136, 72, 0.75); /* Resplandor con temática de café */
+    -moz-box-shadow: 0px 0px 20px 5px rgba(181, 136, 72, 0.75);
+    box-shadow: 0px 0px 20px 5px rgba(181, 136, 72, 0.75);
 }
 
 
